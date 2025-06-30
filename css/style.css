@@ -1,0 +1,453 @@
+:root {
+    --yasil: #53d153;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') center/cover;
+}
+nav {
+    padding: 5px 30px;
+}
+menu, #search { flex: 1 1 40%; }
+menu li { padding: 5px 10px;}
+menu li a {
+    font: bold 1em 'Proxima Nova';
+    color: #fff;
+    padding: 5px 0;
+    white-space: nowrap;
+}
+#title button{
+    border: none;
+}
+
+h1 {
+    font: 700 2em Montserrat;
+    color: #fff;
+}
+h2 {
+    font: 1.2em Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #818181;
+}
+h3 {
+    font: bold 1.5em Proxima Nova;
+    color: #818181;
+}
+h6 {
+    font: 1em 'Myriad Pro';
+    color: #b3b3b3;
+}
+hr {
+    display: inline-block;
+    border-top: 2px solid #818181;
+    width: 43px;
+}
+.bgyasil h2 { color: #207b20}
+.bgyasil hr { border-top: 2px solid #207b20}
+.bgyasil h6 { color: #2b9b2b}
+#search {
+    display: flex;
+    justify-content: center;
+}
+#search input, #search button {
+    border: none;
+    outline: none;
+    background: #ffffffcc;
+    padding: 5px 15px;
+}
+#search input { border-radius: 1em 0 0 1em }
+#search button { border-radius: 0 1em 1em 0 }
+#search button img { height: 15px; }
+#title button{
+    border-radius: 1.5em;
+    text-transform: uppercase;
+    font: 1.3em "Proxima Nova" ;
+    color: #fff;
+}
+
+
+main section { 
+    padding: 40px 0;
+    text-align: center;
+}
+
+#art3 {padding: 48px 0}
+#art3 article { padding: 24px 1em }
+#art3 h3{
+    padding: 20px 0;
+}
+#art3 p{
+    padding-bottom: 25px;
+}
+#art3 a{
+    background: var(--yasil);
+    color: #fff;
+    padding: 9px 20px;
+    border:none;
+    border-radius: 18px;
+}
+#btn3 { 
+    display: inline-flex; 
+    padding: 50px 0
+}
+#btn3 button {
+    border: 1px solid #2b9b2b;
+    font: 1em 'Proxima Nova';
+    background: #fff;
+    color: #2b9b2b;
+    padding: 6px 21px;
+}
+#btn3 button.active, #btn3 button:hover {
+    background: #2b9b2b;
+    color: #fff;
+}
+#btn3 button:first-child { border-radius: 18px 0 0 18px; }
+#btn3 button:last-child { border-radius: 0 18px 18px 0; }   
+#work a{
+    color :aliceblue; 
+    padding: 12px 18px;
+    border: none;
+    border-radius: 18px; 
+    background-color: rgb(68, 68, 68,0.2);
+}
+    #scroll{
+        border-radius: 20px; 
+        padding: 5px 15px;
+        background-color: #cfcece;
+    }
+#gallery img { 
+    width: 100%;
+    padding: .5em 1em;
+}
+#happy img{
+    width: 100%;
+    padding: .5em 1em;
+}
+#client a{
+    color :aliceblue; 
+    padding: 12px 18px;
+    border: none;
+    border-radius: 18px; 
+    background-color: rgb(68, 68, 68,0.2);
+    color: #444;
+}
+
+.bgag { background: #fff }
+.bgboz { background: #f1f1f1 }
+.bgyasil { background: var(--yasil) }
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 30px;
+    background: #e0f3e0;
+    font-size: 4.5em;
+    color: var(--yasil);
+}
+
+footer{
+    background-color: #333;
+}
+
+.sonluq h3,hr{
+    text-align: center;
+    text-align: center;
+}
+.sonluq hr{
+    display: flex;
+}
+.log1 {
+    display: flex;
+    justify-content: center;
+}
+.biktim{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.biktim a{
+    padding: 4px 4px;
+    text-transform: uppercase;
+    color: #ccc;
+    background: #137513;
+    border-radius: 3px;
+}
+.biktim img{
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.big p{
+    font-size: 16px;
+    color: #ccc;
+    font-family: "Proxima Nova";
+    text-align: center;
+}
+.big form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.big form input,textarea{
+    background: #444;
+    border: none;
+}
+.big button{
+    background: #137513;
+    color: #fff;
+}
+#bebe{
+    padding-top: 1em;
+    display: flex;
+    background: #212121;
+    flex-direction: column;
+}
+#bebe h3{
+    font-size: 24px;
+    color: #413c3c;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+#social{
+    padding-top: 24px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#social img{
+    width: 100vw;
+}
+#xosbaxtliq{
+    background: #111;
+    text-align: center;
+    color: aliceblue;
+    padding: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { 
+        display: flex;
+        justify-content: space-between;
+    }
+    menu {
+        display: flex;
+        order: -1
+    }
+    menu li a.active, menu li a:hover { border-top: 5px solid var(--yasil); }
+    #search { justify-content: end }
+    #title button{
+        margin: 20px 0px;
+        width: 250px;
+        height: 48px;
+        text-align: center;
+        border: none;
+    }
+
+    h1 { font-size: 3.4em }
+    #art3 { 
+        display: flex;
+        justify-content: center;
+    }
+    #art3 article { flex: 0 1 350px }
+
+    #gallery { 
+        max-width: 950px;
+        margin: auto;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    #gallery img { 
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+        padding: .5em;
+    }
+    #herp{
+        padding:72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ceo{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px;
+        gap: 10px;
+    }
+    .fa-angle-left{
+        color:#4b4343;
+      
+    }
+    .fa-chevron-right{
+        color:#4b4343;
+    }
+    .orta{
+        padding: 0px 120px;
+        width: 600px;
+    }
+    #happy{
+        max-width: 1250px;
+        margin: auto;
+        display: flex; 
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+    #happy img{
+        width: 10em;
+        height: 10em;
+        object-fit:center;
+        padding: .5em ;
+        margin-left: 6em;
+        margin-bottom: 5em;
+    }
+    #team{
+        background:linear-gradient(to bottom,#53d153,#3f533f,#142b14,#3eba3e)
+    }
+    .stuff{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px;
+    }
+    .stuff img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: block;
+    }
+    .stuff hr{
+        background-color: #4d4b4b;
+        border:none;
+            width: 2px;
+            height: 78px;
+        }
+    .stuff p {
+        font: 400 1em 'Proxima Nova';
+        color: #ffffff;
+    }
+    
+    .column img{
+        width: 10em;
+        height: 10em;
+        border: none;
+        border-radius: 50%;
+    }
+    .log{
+        padding: 5px 5px;
+    }
+    .log img{
+        height: 20px ;
+        width: 20px;
+        margin:2px;
+    }
+    .log {
+        display: inline-flex;
+        background-color: #c0e6c0;
+        border: none;
+        margin-block: 15px;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    #asagi {
+        padding-block: 30px;
+        text-align: center;
+
+    }
+    #uc{
+        background-color: #53d153;
+        padding: 12px 24px;
+        border-radius: 24px;
+        box-shadow: 2px 2px 3px #137513;
+        color: #fff;
+        font: 300 1.2em 'Proxima Nova';
+        text-align: center;
+}
+    .sonluq{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .sonluq .big{
+        width: 300px;
+    }
+    .big h3{
+            color: #ccc;
+    }
+
+    .sonluq hr{
+            display: inline-block;
+            border-top: 2px solid #818181;
+            width: 43px;
+    }
+    .biktim{
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+ 
+    .yeter{
+        display: flex;
+        flex-direction: column; 
+        text-align: start;
+    }
+    .log1{
+        padding: 5px 5px;
+        margin: 4px 4px;
+        display: inline-flex;
+        background-color: aliceblue;
+        border: none;
+        margin-block: 15px;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .log1 img{
+        margin: 0px 1px;
+
+    }
+    
+    .big form input, button{
+        border: none;
+        height: 30px;
+    }
+    .big form textarea{
+        height: 130px;
+    }
+    .big button{
+        background: #2b9b2b;
+        border-radius: 0 0 4px 3px;
+    }
+    #social{
+        padding-top: 24px;
+        padding-bottom: 28px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+    .bitdi img{
+        width: 150px !important;
+        height: 44px !important;
+    }
+   
+
+
+}
