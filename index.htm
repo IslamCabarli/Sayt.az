@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Qiymət Kalkulyatoru</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-md">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">Qiymət Təklifi Al</h1>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">Statik səhifələr</h2>
+        <div class="bg-gray-50 p-6 rounded-md">
+          <label class="block text-gray-600 mb-2">Nəçə statik səhifə olacaq?</label>
+          <input type="range" id="sehifeSayi" min="1" max="20" value="1" class="w-full accent-purple-500">
+          <p class="text-purple-600 mt-2"><span id="sehifeSayiGoster">1</span> səhifə</p>
+
+          <label class="block text-gray-600 mt-4 mb-2">Dizayn mürəkkəblik:</label>
+          <input type="range" id="dizaynSeviyesi" min="1" max="3" value="1" class="w-full accent-purple-500">
+          <p class="text-purple-600 mt-2">Seçim: <span id="dizaynEtiketi">Sadə</span></p>
+
+          <div class="mt-4 text-right text-purple-600 font-semibold">
+            Xərc: <span id="sehifeXerci">0</span> ₼
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">Veb sayt əlavələri</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 bg-gray-50 p-6 rounded-md" id="elaveler"></div>
+        <div class="mt-4 text-right text-purple-600 font-semibold">
+          Xərc: <span id="elaveXerci">0</span> ₼
+          
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">Logo dizayni</h2>
+        <input id="logodizayni" type="range" min="1" max="3" value="1" class="w-full accent-purple-500">
+        <p class="text-purple-600 mt-2">Seçim: <span id="logoEtiketi">Ehtiyac Yoxdur</span></p>
+        <div class="mt-4 text-right text-purple-600 font-semibold">
+          Xərc: <span id="dizaynxerc">0</span> ₼
+        </div>
+      </div>
+        
+
+
+      <div class="bg-gray-100 p-6 rounded-md text-gray-700 space-y-2">
+        <p>Statik səhifələr: <span id="xulaseSehife">₼ 10</span></p>
+        <p>Əlavələr: <span id="xulaseElave">₼ 0</span></p>
+        <p class="text-sm text-gray-500">Qeyd: Minimum sayt qiyməti ₼ 450</p>
+        <p class="text-xl font-bold text-purple-700 mt-4">Ümumi təxmini dəyəri: ₼ <span id="umumiXulase">450</span></p>
+      </div>
+
+      <button class="w-full mt-6 bg-green-500 hover:bg-green-600 text-white py-3 rounded-md text-lg font-semibold">
+        Saytınızı İndi Sifariş Edin
+      </button>
+    </div>
+
+    <script type="module" src="./script/app.js"></script>
+  </body>
+</html>
